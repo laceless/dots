@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+  <menu execute="/usr/libexec/openbox-xdg-menu applications" id="applications-menu" label="Applications"/>
+  <menu execute="/usr/libexec/openbox-xdg-menu preferencess" id="preferencess-menu" label="Preferencess"/>
+  <menu execute="/usr/libexec/openbox-xdg-menu /etc/xdg/openbox/terminals" id="terminals-menu" label="Terminals"/>
+  <menu id="root-menu" label="">
+    <item label="terminal">
+      <action name="Execute">
+        <execute>xterm</execute>
+      </action>
+    </item>
+    <item label="vim">
+      <action name="Execute">
+        <execute>xterm -e vim</execute>
+      </action>
+    </item>
+    <item label="files">
+      <action name="Execute">
+        <execute>thunar</execute>
+      </action>
+    </item>
+    <item label="atom">
+      <action name="Execute">
+        <execute>atom</execute>
+      </action>
+    </item>
+    <item label="firefox">
+      <action name="Execute">
+        <execute>firefox</execute>
+      </action>
+    </item>
+    <item label="refresh">
+      <action name="Execute">
+        <execute>openbox --restart</execute>
+      </action>
+    </item>
+    <item label="exit">
+      <action name="Exit"/>
+    </item>
+</openbox_menu>
